@@ -42,8 +42,8 @@
 }
 
 .slider-2-content {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  // padding-left: 2rem;
+  // padding-right: 2rem;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,5 +177,40 @@
   a {
     color: $secondary;
     font-weight: 700;
+  }
+}
+
+.image-slider {
+  .image-item {
+    width: 269px;
+    height: 269px;
+    .img {
+      width: 100%;
+    }
+  }
+}
+
+//Instagram slider
+.slider {
+  max-width: 1440px;
+  display: flex;
+
+  .owl-item {
+    width: 285px !important;
+    height: 285px !important;
+    margin-right: 30px;
+  }
+  .card {
+    background-color: $white;
+    border-radius: 16px;
+    width: 285px;
+    height: 285px;
+    padding: 8px;
+    flex: 1;
+    margin-left: 3px;
+  }
+
+  .owl-dots {
+    display: none;
   }
 }

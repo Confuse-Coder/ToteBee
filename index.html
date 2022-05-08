@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-md-6"></div>
             </div>
-            <div class="row card-img mt-5">
+            <div class="row card-img mt-5 pt-5">
                 <div class="col-md-3">
                     <div class="card-img__box">
                         <div class="w-100">
@@ -355,7 +355,7 @@
                 </div>
                 <div class="col-md-6"></div>
             </div>
-            <div class="row card-img mt-5">
+            <div class="row card-img mt-5 pt-5">
                 <div class="col-md-3">
                     <div class="card-img__box">
                         <div class="w-100">
@@ -464,7 +464,7 @@
     <!-- START "INSTAGRAM" SECTION -->
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col-md-12 text-center testimonials">
                     <h1 class="display-title">BeeYou trên Instagram</h1>
                     <p>Follow BeeYou trên instagram để có cơ hội tham gia các chương trình ưu đãi dành riêng cho người
@@ -477,6 +477,89 @@
         </div>
     </section>
     <!-- END "INSTAGRAM" SECTION -->
+
+    <!-- START SLIDER INSTAGRAM -->
+
+    <div class="slider owl-carousel pb-5 mb-4">
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-2.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-3.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-4.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-4.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-3.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-4.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="ins-img">
+                <img src="/img/Ins Tote/Rectangle 10-4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- END SLIDER INSTAGRAM -->
+
+    <!-- START FOOTER SECTION -->
+    <section id="footer">
+        <div class="row">
+            <div class="footer-content">
+                <div class="footer-title">
+                    <ul class="footer-title__list">
+                        <a href="#">
+                            <li class="footer-title__item">Sản phẩm hot</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer-title__item">Sản phẩm bán chạy</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer-title__item">Hot deal tháng 12</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer-title__item">Anotner links</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-brands">
+                    <p>&copy; 2022 beebag.com.vn</p>
+                    <img src="/img/Footer/Facebook 1.svg" alt="">
+                    <img src="/img/Footer/instagram 1.svg" alt="">
+                    <img src="/img/Footer/youtube 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END FOOTER SECTION -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -503,6 +586,13 @@
 
             });
 
+            $(".slider").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                items: 4,
+            });
         });
     </script>
 </body>
