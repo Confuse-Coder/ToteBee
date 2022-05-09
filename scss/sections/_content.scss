@@ -195,6 +195,10 @@
   max-width: 1440px;
   display: flex;
 
+  .owl-stage-outer {
+    height: 285px;
+  }
+
   .owl-item {
     width: 285px !important;
     height: 285px !important;

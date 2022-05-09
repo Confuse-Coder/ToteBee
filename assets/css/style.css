@@ -11308,6 +11308,9 @@ textarea.form-control-lg {
   max-width: 1440px;
   display: flex;
 }
+.slider .owl-stage-outer {
+  height: 285px;
+}
 .slider .owl-item {
   width: 285px !important;
   height: 285px !important;
