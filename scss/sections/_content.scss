@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@import 'media-queries';
 
 body {
   min-width: 1440px !important; /* Suppose you want minimum width of 1000px */
