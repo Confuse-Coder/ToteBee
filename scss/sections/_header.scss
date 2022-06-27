@@ -21,7 +21,16 @@ html {
     width: 360px;
   }
 
+  button {
+    .closeIcon {
+      display: none;
+    }
+  }
+
   .navbar-toggler {
+    &:focus {
+      box-shadow: none !important;
+    }
     @include mobile {
     }
   }

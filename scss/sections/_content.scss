@@ -7,28 +7,30 @@ body {
 }
 
 //SLIDER
-#owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: 480px;
-}
-
-.item {
-  img {
-    @include media-breakpoint-down(xxl) {
-      max-width: 1320px;
-    }
-    @include media-breakpoint-down(xl) {
-      max-width: 1140px;
-    }
-    @include media-breakpoint-down(lg) {
-      max-width: 960px;
-    }
-    @include media-breakpoint-down(md) {
-      max-width: 720px;
-    }
-    @include media-breakpoint-down(sm) {
-      max-width: 540px;
+#owl-demo {
+  @include mobile {
+    max-width: 360px;
+  }
+  .item {
+    display: block;
+    width: 100%;
+    height: auto;
+    img {
+      @include media-breakpoint-down(xxl) {
+        max-width: 1320px;
+      }
+      @include media-breakpoint-down(xl) {
+        max-width: 1140px;
+      }
+      @include media-breakpoint-down(lg) {
+        max-width: 960px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: 720px;
+      }
+      @include media-breakpoint-down(sm) {
+        max-width: 330px;
+      }
     }
   }
 }

@@ -28,12 +28,14 @@
                 <a class="navbar-brand pt-0" href="#">
                     <img src="/img/Logo-BeeYou.svg" alt="logo image">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="/img/menu 1.svg" alt="logo image">
+                <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="menuIcon" src="/img/menu 1.svg" alt="open menu">
+                    <img class="closeIcon" src="/img/close menu.svg" alt="close menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav menu">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
                         </li>
@@ -74,9 +76,10 @@
     <section id="slider">
         <div class="container">
             <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item"><img src="/img/Slider.png" alt="Mirror Edge"></div>
-                <div class="item"><img src="/img/Slider.png" alt="The Last of us"></div>
-                <div class="item"><img src="/img/Slider.png" alt="GTA V"></div>
+                <div class="item img-fluid"><img src="/img/Slider.png" alt="sale-banner-1"></div>
+                <div class="item img-fluid"><img src="/img/Slider.png" alt="sale-banner-2"></div>
+                <div class="item img-fluid"><img src="/img/Slider.png" alt="sale-banner-3"></div>
+                <div class="item img-fluid"><img src="/img/Slider.png" alt="sale-banner-4"></div>
             </div>
         </div>
     </section>
@@ -695,18 +698,37 @@
 
         let x = 0;
 
-        upArrow.onclick = function () {
+        downArrow.onclick = function () {
             if (x > "-600") {
                 x = x - 200;
                 slide.style.top = x + "px";
             }
         }
-        downArrow.onclick = function () {
+        upArrow.onclick = function () {
             if (x < 0) {
                 x = x + 200;
                 slide.style.top = x + "px";
             }
         }
+
+        const menu = document.querySelector(".menu");
+        const hamburger = document.querySelector(".hamburger");
+        const closeIcon = document.querySelector(".closeIcon");
+        const menuIcon = document.querySelector(".menuIcon");
+
+        function toggleMenu() {
+            if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                closeIcon.style.display = "none";
+                menuIcon.style.display = "block";
+            } else {
+                menu.classList.add("showMenu");
+                closeIcon.style.display = "block";
+                menuIcon.style.display = "none";
+            }
+        }
+
+        hamburger.addEventListener("click", toggleMenu);
     </script>
 </body>
 

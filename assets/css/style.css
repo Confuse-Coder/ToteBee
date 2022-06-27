@@ -11125,35 +11125,39 @@ body {
   /* Firefox will set width as auto */
 }
 
-#owl-demo .item img {
+@media screen and (max-width: 360px) {
+  #owl-demo {
+    max-width: 360px;
+  }
+}
+#owl-demo .item {
   display: block;
   width: 100%;
-  height: 480px;
+  height: auto;
 }
-
 @media (max-width: 1399.98px) {
-  .item img {
+  #owl-demo .item img {
     max-width: 1320px;
   }
 }
 @media (max-width: 1199.98px) {
-  .item img {
+  #owl-demo .item img {
     max-width: 1140px;
   }
 }
 @media (max-width: 991.98px) {
-  .item img {
+  #owl-demo .item img {
     max-width: 960px;
   }
 }
 @media (max-width: 767.98px) {
-  .item img {
+  #owl-demo .item img {
     max-width: 720px;
   }
 }
 @media (max-width: 575.98px) {
-  .item img {
-    max-width: 540px;
+  #owl-demo .item img {
+    max-width: 330px;
   }
 }
 
@@ -11455,6 +11459,12 @@ html {
   .navbar {
     width: 360px;
   }
+}
+.navbar button .closeIcon {
+  display: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
 }
 @media screen and (max-width: 360px) {
   .navbar .navbar-collapse {
