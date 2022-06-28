@@ -33,40 +33,85 @@ body {
       }
     }
   }
+
+  .owl-dots {
+    @include mobile {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5); /* you can change the value also */
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      margin-top: -10px;
+    }
+  }
+}
+
+#slider {
+  margin-top: 20px;
 }
 
 .slider-2 {
-  position: relative;
-  margin-top: 52.5px;
-  width: 100%;
-  background-size: cover;
-  img {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
+  height: 800px;
+  @include mobile {
+    max-width: 360px;
+    margin-top: 10px;
   }
-}
+  .slider-2-content {
+    position: relative;
+    @include mobile {
+      position: absolute;
+    }
+    img {
+      position: absolute;
+      top: 30px;
+      height: auto;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include mobile {
+        position: relative;
+        top: 50px;
+        overflow: hidden;
+        width: 100%;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5); /* you can change the value also */
+        -webkit-transform-origin: center;
+        transform-origin: center;
+      }
+    }
 
-.slider-2-content {
-  // padding-left: 2rem;
-  // padding-right: 2rem;
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  position: relative;
+    .wrapper-text {
+      margin-top: 90px;
+      @include mobile {
+        padding: 8px;
+      }
 
-  .wrapper-text {
-    font-weight: 400;
+      .wrapper-text-left {
+        .display-title {
+          padding-top: 0;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 72px;
+          @include mobile {
+            font-size: 24px;
+            padding-top: 0;
+            line-height: 36px;
+          }
+        }
+      }
+
+      .wrapper-text-right {
+        position: absolute;
+        font-weight: 400;
+
+        p {
+          @include mobile {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
   }
-}
-.display-title {
-  padding-top: 0;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
 }
 
 //Siêu phẩm TOTE

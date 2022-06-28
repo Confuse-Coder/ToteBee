@@ -11160,37 +11160,89 @@ body {
     max-width: 330px;
   }
 }
+@media screen and (max-width: 360px) {
+  #owl-demo .owl-dots {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    margin-top: -10px;
+  }
+}
+
+#slider {
+  margin-top: 20px;
+}
 
 .slider-2 {
+  height: 800px;
+}
+@media screen and (max-width: 360px) {
+  .slider-2 {
+    max-width: 360px;
+    margin-top: 10px;
+  }
+}
+.slider-2 .slider-2-content {
   position: relative;
-  margin-top: 52.5px;
+}
+@media screen and (max-width: 360px) {
+  .slider-2 .slider-2-content {
+    position: absolute;
+  }
+}
+.slider-2 .slider-2-content img {
+  position: absolute;
+  top: 30px;
+  height: auto;
   width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-.slider-2 img {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (max-width: 360px) {
+  .slider-2 .slider-2-content img {
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
 }
-
-.slider-2-content {
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  position: relative;
+.slider-2 .slider-2-content .wrapper-text {
+  margin-top: 90px;
 }
-.slider-2-content .wrapper-text {
-  font-weight: 400;
+@media screen and (max-width: 360px) {
+  .slider-2 .slider-2-content .wrapper-text {
+    padding: 8px;
+  }
 }
-
-.display-title {
+.slider-2 .slider-2-content .wrapper-text .wrapper-text-left .display-title {
   padding-top: 0;
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
+}
+@media screen and (max-width: 360px) {
+  .slider-2 .slider-2-content .wrapper-text .wrapper-text-left .display-title {
+    font-size: 24px;
+    padding-top: 0;
+    line-height: 36px;
+  }
+}
+.slider-2 .slider-2-content .wrapper-text .wrapper-text-right {
+  position: absolute;
+  font-weight: 400;
+}
+@media screen and (max-width: 360px) {
+  .slider-2 .slider-2-content .wrapper-text .wrapper-text-right p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .card-text-box {
@@ -11450,14 +11502,29 @@ html {
   width: 56px;
   height: 56px;
 }
+@media screen and (max-width: 360px) {
+  .navbar-brand img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #nav {
+    max-width: 360px;
+    height: 70px;
+  }
+}
 
 .navbar {
-  background-color: #f4f4f4;
+  background-color: #e5e5e5;
   height: 90px;
 }
 @media screen and (max-width: 360px) {
   .navbar {
-    width: 360px;
+    max-width: 360px;
+    height: 70px;
+    background-color: #f4f4f4;
   }
 }
 .navbar button .closeIcon {
@@ -11465,6 +11532,12 @@ html {
 }
 .navbar .navbar-toggler:focus {
   box-shadow: none !important;
+}
+@media screen and (max-width: 360px) {
+  .navbar .navbar-toggler img {
+    height: 20px;
+    width: 20px;
+  }
 }
 @media screen and (max-width: 360px) {
   .navbar .navbar-collapse {
@@ -11534,14 +11607,22 @@ html {
 @media screen and (max-width: 360px) {
   .navbar .nav-icons {
     position: absolute;
-    right: 80px;
+    right: 60px;
     top: 25px;
+    width: 20px;
+    height: 20px;
   }
 }
 .navbar .nav-icons i {
   font-size: 18px;
   color: #000;
   transform: translate(75%, 50%);
+}
+@media screen and (max-width: 360px) {
+  .navbar .nav-icons i {
+    font-size: 12px;
+    transform: translate(50%, -25%);
+  }
 }
 .navbar .nav-icons span {
   position: absolute;
@@ -11553,11 +11634,24 @@ html {
   border: 0.1rem solid #fff;
   transform: translate(50%, -25%);
 }
+@media screen and (max-width: 360px) {
+  .navbar .nav-icons span {
+    width: 12px;
+    height: 12px;
+    transform: translate(25%, -40%);
+  }
+}
 .navbar .nav-icons span b {
   position: absolute;
   transform: translate(77%, -7%);
   color: #fff;
   font-size: 12px;
+}
+@media screen and (max-width: 360px) {
+  .navbar .nav-icons span b {
+    transform: translate(90%, 0%);
+    font-size: 6px;
+  }
 }
 
 .owl-carousel span {
