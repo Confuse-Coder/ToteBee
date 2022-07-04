@@ -1,18 +1,54 @@
 @use '../custom' as *;
+@import 'media-queries';
+
 //Footer
 #footer {
   height: 90px;
   background-color: $white;
 
+  @include mobile {
+    height: 192px;
+    max-width: 360px;
+  }
+
   .footer-content {
     display: flex;
     justify-self: center;
     align-items: center;
+    @include mobile {
+      padding: 33px 24px;
+    }
 
     .footer-title {
+      &__item_1 {
+        @include mobile {
+          margin-right: 50px !important;
+        }
+      }
+      &__item_2 {
+        @include mobile {
+          margin-right: 40px !important;
+        }
+      }
+      &__item_3 {
+        @include mobile {
+          margin-right: 14px !important;
+          margin-top: 10px !important;
+        }
+      }
+      &__item_4 {
+        @include mobile {
+          margin-right: 40px !important;
+          margin-top: 10px !important;
+        }
+      }
       &__list {
         list-style-type: none;
         margin: 0 auto;
+        @include mobile {
+          padding: 0;
+          line-height: 40px;
+        }
 
         a {
           margin-right: 40px;
@@ -35,8 +71,22 @@
   justify-content: space-around;
   align-items: center;
 
+  @include mobile {
+    justify-content: unset;
+  }
+
   span {
     font-size: 12px;
     font-weight: 400;
+
+    @include mobile {
+      margin-right: 18px;
+    }
+  }
+
+  .footer-icons {
+    img:nth-child(2) {
+      margin-right: 5px;
+    }
   }
 }
